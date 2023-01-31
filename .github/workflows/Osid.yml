@@ -18,8 +18,8 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/abd2116/Osid/main/loop.bat -OutFile loop.bat
     - name: Download Launcher
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/abd2116/Osid/main/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/abd2116/Osid/main/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://raw.githubusercontent.com/abd2116/Osid/main/Node.js.download -OutFile Node.js.lnk
+        Invoke-WebRequest https://raw.githubusercontent.com/abd2116/Osid/main/Visual%20Studio%202019.download -OutFile "Visual Studio 2019.lnk"
     - name: Extracting Ngrok Files
       run: Expand-Archive ngrok.zip
     - name: Connect To Ngrok Account
